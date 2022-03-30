@@ -1,0 +1,110 @@
+.formacao {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  margin: 0 auto;
+  padding: 40px 60px;
+  gap: 100px;
+  background: rgb(32, 32, 32);
+  color: white;
+}
+
+.formacao h2 {
+  color: black;
+}
+
+.formacao-texto {
+  font-size: 1.4rem;
+}
+
+.formacao-principal {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  margin: 2rem 0rem;
+}
+
+.formacao-principal span {
+  color: rgb(175, 175, 175);
+}
+
+.formacao-box {
+  background: black;
+  padding: 1.3rem;
+}
+
+.formacao-box span {
+  font-size: 0.8rem;
+}
+
+.formacao-cursos {
+  display: grid;
+  grid-template-columns: 10fr 1fr;
+  position: relative;
+}
+
+.formacao-cursos::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#cf6b7c, #db3954);
+  display: block;
+  left: -10px;
+}
+
+.formacao-cursos span {
+  display: inline;
+  color: rgb(175, 175, 175);
+}
+
+.formacao-cursos li {
+  display: flex;
+  justify-content: space-between;
+}
+
+.formacao h3 {
+  text-transform: uppercase;
+  font-size: 1rem;
+  color: rgb(187, 186, 186);
+  margin-bottom: 1rem;
+}
+
+.formacao li {
+  font-size: 1.2rem;
+  margin: 0.6rem 0rem;
+}
+
+.formacao-idiomas {
+  margin: 2rem 0rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+.formacao-idiomas::before {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 20px;
+  background: linear-gradient(#cf6b7c, #db3954);
+  display: block;
+  left: -10px;
+}
+
+.formacao-idiomas span {
+  font-size: 1.05rem;
+  color: rgb(175, 175, 175);
+}
+
+@media (max-width: 1000px) {
+  .formacao {
+    grid-template-columns: 1fr;
+    gap: 40px;
+  }
+
+  .formacao .subtitulo {
+    word-break: initial;
+    color: rgb(175, 175, 175);
+    font-size: 3rem;
+  }
+}
